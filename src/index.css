@@ -1,13 +1,118 @@
+:root {
+  --default-font: 1rem;
+  --default-font-normal: 2rem;
+  --default-font-big: 2.7rem;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/*Nav bar*/
+.navbar-nav li a {
+  font-size: var(--default-font);
+}
+.navbar-brand {
+  font-size: var(--default-font-big);
+  letter-spacing: 0.1rem;
+}
+/* End Nav bar*/
+
+/* resize image */
+.img {
+  height: 40rem;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  transition: all 0.3s ease-in;
+}
+
+.carousel-item:hover img {
+  filter: blur(3px) brightness(0.6);
+}
+.carousel-item h5 {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.carousel-item:hover h5 {
+  opacity: 0.8;
+}
+
+.carousel-item .carousel-descript {
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.carousel-item:hover .carousel-descript {
+  opacity: 0.8;
+}
+.carousel-animation {
+  transform-origin: center left;
+  animation: fade 0.3s ease-in;
+}
+@keyframes fade {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* end resize image */
+
+/*card img */
+.phone-img {
+  height: 15rem;
+}
+.phone-box {
+  transition: all 0.3s ease-in-out;
+}
+.phone-box:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+  transform: translateY(1rem) scale(1.1);
+}
+
+/* end card img */
+
+/* cart img*/
+.cart-img {
+  width: 100%;
+  height: 10rem;
+}
+.cart-link {
+  text-decoration: none;
+}
+.quantity {
+  width: 30%;
+}
+.cart-btn {
+  border-style: none;
+  background-color: #0d6efd;
+  color: white;
+  height: 1.9rem;
+  border-radius: 2px;
+}
+.cart-btn span {
+  font-weight: 550;
+}
+.cart-btn:hover {
+  background-color: #0c4aa8;
+}
+.cart-check a {
+  color: white;
+  text-decoration: none;
+}
+.cart-check:hover a {
+  color: white;
+  text-decoration: none;
 }
