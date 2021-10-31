@@ -1,11 +1,11 @@
 import "./App.css";
-import Footer from "./components/Footer";
+
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import "@fortawesome/fontawesome-free/css/all.css";
 import Product from "./components/Product";
-
+import "aos/dist/aos.css";
 import Contact from "./components/Contact";
 import { Route, Switch, Redirect } from "react-router-dom";
 import ProductDetail from "./components/ProductDetail";
@@ -25,7 +25,6 @@ function App() {
         <Route exact path="/checkout" component={CheckoutCart} />
         <Redirect to="/" />
       </Switch>
-      <Footer />
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Product = () => {
       <div
         class="card my-5 py-4 phone-box"
         key={item.id}
-        style={{ width: "21rem" }}
+        style={{ width: "19rem" }}
       >
         <img src={item.img} class="card-img-top phone-img " alt={item.title} />
         <div class="card-body text-center">
