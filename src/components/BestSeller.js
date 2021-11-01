@@ -4,15 +4,15 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import mobileData from "../mobile-data";
 const BestSeller = () => {
-  const [productArr, setProductArr] = useState(mobileData);
+  const mobileArray = mobileData.filter(item => item.type === "mobile");
+  console.log(mobileArray);
+  const [productArr, setProductArr] = useState(mobileArray);
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
   const productArrHandler = typeFilter => {
     let product = [];
-    console.log("Type", typeFilter);
-    setProductArr(product);
     mobileData.forEach(item => {
       if (typeFilter === "all") {
         product.push(item);
@@ -26,7 +26,10 @@ const BestSeller = () => {
   };
   const itemList = list => {
     return list.map(item => (
-      <div className=" sell-animation d-flex flex-column justify-content-center sell-box col-sm-2 align-items-center ">
+      <div
+        key={item.id}
+        className=" sell-animation d-flex flex-column justify-content-center sell-box col-sm-3 align-items-center "
+      >
         <img src={item.img} alt={item.title} className="sell-img" />
         <p className="text-center mt-2 sell-price">${item.price}</p>
         <button className="sell-button-item">Get now</button>
@@ -41,14 +44,6 @@ const BestSeller = () => {
       </h1>
       <div className="arrival-text mx-auto mb-5 "></div>
       <div className="d-flex justify-content-center">
-        <div
-          className="sell-button"
-          onClick={() => {
-            productArrHandler("all");
-          }}
-        >
-          All
-        </div>
         <div
           className="sell-button"
           onClick={() => {
@@ -74,8 +69,8 @@ const BestSeller = () => {
           Acessory
         </div>
       </div>
-      <div className="container sell-list  mt-5">
-        <div className="row g-3">{itemList(productArr)}</div>
+      <div className="d-flex flex-row flex-wrap justify-content-center sell-list  mt-5">
+        {itemList(productArr)}
       </div>
     </div>
   );
