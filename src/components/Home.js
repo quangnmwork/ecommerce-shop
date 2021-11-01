@@ -120,16 +120,16 @@ const Home = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div> */}
-      <div className="d-flex flex-wrap flex-row mt-6 py-2 px-4 w-70 justify-content-center mx-auto">
-        <div data-aos="fade-up" className="box px-4 position-relative">
+      <div className="d-flex flex-wrap flex-row mt-6 py-2 px-4 w-70 justify-content-center mx-auto box-container">
+        <div data-aos="fade-up" className="box  position-relative">
           <img src="/img/product-1.jpg" alt="Phone" className="rounded"></img>
           <h3 className=" box-text">IPhone</h3>
         </div>
-        <div data-aos="fade-up" className="box px-4 position-relative">
+        <div data-aos="fade-up" className="box  position-relative">
           <img src="/img/phone-pk.jpg" className="rounded" alt="Phone"></img>
           <h3 className=" box-text">Accessories</h3>
         </div>
-        <div data-aos="fade-up" className="box px-4 position-relative">
+        <div data-aos="fade-up" className="box position-relative">
           <img src="/img/phone-table.jpg" className="rounded" alt="Phone"></img>
           <h3 className="box-text">Tablet</h3>
         </div>
