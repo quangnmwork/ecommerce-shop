@@ -9,6 +9,7 @@ import BestSeller from "./BestSeller";
 import CountdownTime from "./CountdownTime";
 import NewsLetter from "./NewsLetter";
 import Footer from "./Footer";
+import SwiperShow from "./SwiperShow";
 const Home = () => {
   const handleDragStart = e => e.preventDefault();
   const responsiveOption = {
@@ -30,7 +31,8 @@ const Home = () => {
   }, []);
   return (
     <div>
-      <div
+      <SwiperShow />
+      {/* <div
         id="carouselExampleCaptions"
         className="carousel slide"
         data-bs-ride="carousel"
@@ -117,7 +119,7 @@ const Home = () => {
           <span className="carousel-control-next-icon" aria-hidden="true" />
           <span className="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> */}
       <div className="d-flex flex-wrap flex-row mt-6 py-2 px-4 w-70 justify-content-center mx-auto">
         <div data-aos="fade-up" className="box px-4 position-relative">
           <img src="/img/product-1.jpg" alt="Phone" className="rounded"></img>

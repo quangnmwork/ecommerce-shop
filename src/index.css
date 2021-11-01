@@ -514,3 +514,54 @@ code {
   color: #0d6efd;
   cursor: pointer;
 }
+/*swiper*/
+.swiper-img {
+  height: 30rem;
+  width: 100%;
+  margin-right: 1rem;
+}
+.swiper-box {
+  padding: 0rem 15rem;
+}
+.samsung {
+  background: rgb(255, 98, 98);
+  background: linear-gradient(
+    23deg,
+    rgba(255, 98, 98, 1) 8%,
+    rgba(251, 42, 42, 1) 15%,
+    rgba(254, 37, 37, 1) 84%,
+    rgba(247, 81, 81, 0.9895308465182948) 90%
+  );
+}
+.iphone {
+  background: rgb(31, 89, 92);
+  background: linear-gradient(
+    23deg,
+    rgba(31, 89, 92, 1) 7%,
+    rgba(1, 51, 37, 0.9895308465182948) 20%,
+    rgba(1, 51, 37, 0.9895308465182948) 67%,
+    rgba(31, 89, 92, 1) 91%
+  );
+}
+.huawei {
+  background: rgb(72, 255, 206);
+  background: linear-gradient(
+    23deg,
+    rgba(72, 255, 206, 1) 10%,
+    rgba(0, 214, 156, 1) 20%,
+    rgba(0, 204, 149, 1) 79%,
+    rgba(72, 255, 206, 0.9895308465182948) 90%
+  );
+}
+.swiper-text {
+  color: white;
+}
+.swiper-text h3 {
+  font-size: 2.3rem;
+}
+.swiper-text p {
+  width: 80%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: justify;
+}
