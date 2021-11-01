@@ -47,7 +47,7 @@ const CountdownTime = props => {
               </span>
             </div>
           </div>
-          <button className="countdown-button mt-5">Shop now</button>
+          <button className="countdown-button">Shop now</button>
         </div>
       );
     }

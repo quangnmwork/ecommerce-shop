@@ -161,6 +161,11 @@ code {
     margin-top: 1rem;
   }
 }
+@media screen and (max-width: 512px) {
+  .box img {
+    width: 28rem;
+  }
+}
 /* custom carousel item */
 .carousel-box {
   height: auto;
@@ -375,8 +380,9 @@ code {
 .countdown-button {
   z-index: 1;
   position: relative;
+
   width: 30%;
-  margin: 0 auto;
+  margin: 3rem auto;
   font-size: inherit;
   font-family: inherit;
   font-size: 1.2rem;
@@ -459,6 +465,29 @@ code {
     background-color: #000;
   }
 }
+@media screen and (max-width: 520px) {
+  .countdown-box {
+    padding: 0.5rem 1rem;
+  }
+  .countdown-img img {
+    height: 12rem;
+  }
+  .countdown-time p {
+    font-size: 0.9rem;
+  }
+  .countdown-time span {
+    font-size: 1.3rem;
+  }
+  .countdown-time {
+    width: 4rem;
+    height: 4rem;
+    margin-top: -1rem;
+  }
+  .countdown-button {
+    margin-top: 1rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
 /*letter */
 .letter-box {
   background-color: #f2f2f2;
@@ -491,6 +520,14 @@ code {
   }
   .letter-input button {
     padding: 0rem 0.9rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .letter-input input {
+    width: 17rem;
+  }
+  .letter-input button {
+    padding: 0rem 0.5rem;
   }
 }
 @keyframes jelly {
@@ -555,6 +592,7 @@ code {
 }
 .swiper-text {
   color: white;
+  margin-top: 5rem;
 }
 .swiper-text h3 {
   font-size: 2.3rem;
@@ -564,4 +602,59 @@ code {
   font-weight: 500;
   font-size: 1.2rem;
   text-align: justify;
+}
+@media screen and (max-width: 1200px) {
+  .swiper-img {
+    height: 20rem;
+  }
+  .swiper-box {
+    padding: 0rem 2rem;
+  }
+  .swiper-text h3 {
+    font-size: 1.7rem;
+  }
+  .swiper-text p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .swiper-text {
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .swiper-img {
+    height: 20rem;
+  }
+  .swiper-box {
+    padding: 0rem 1rem;
+  }
+  .swiper-text h3 {
+    font-size: 1.2rem;
+  }
+  .swiper-text p {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+  .swiper-text {
+    margin-right: 1rem;
+  }
+}
+@media screen and (max-width: 512px) {
+  .swiper-img {
+    height: 12rem;
+  }
+  .swiper-box {
+    padding: 0rem;
+  }
+  .swiper-text h3 {
+    font-size: 1rem;
+  }
+  .swiper-text p {
+    width: 95%;
+    font-size: 0.5rem;
+  }
+  .swiper-text {
+    margin-right: 0.2rem;
+  }
 }

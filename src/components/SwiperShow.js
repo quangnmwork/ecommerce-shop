@@ -76,11 +76,11 @@ const SwiperShow = () => {
         <SwiperSlide>
           <div className="d-flex justify-content-center py-5 swiper-box huawei">
             <div
-              className="swiper-img me-5"
+              className="swiper-img "
               ref={containerHuawei}
               data-swiper-parallax="-400"
             />
-            <div className="swiper-text mt-6">
+            <div className="swiper-text ">
               <h2 data-swiper-parallax="-400">Huawei Mate 30 Pro</h2>
               <p data-swiper-parallax="-400">
                 First of all, the Mate 30 Pro is a premium phone from the
@@ -94,11 +94,11 @@ const SwiperShow = () => {
         <SwiperSlide>
           <div className="d-flex justify-content-center py-5 swiper-box samsung">
             <div
-              className="swiper-img me-5"
+              className="swiper-img "
               ref={containerSamsung}
               data-swiper-parallax="-400"
             />
-            <div className="swiper-text mt-6">
+            <div className="swiper-text ">
               <h2 data-swiper-parallax="-400"> Samsung Galaxy A20</h2>
               <p data-swiper-parallax="-400">
                 Experience the power of the Exynos 7884 Octa-core Processor by
@@ -111,8 +111,8 @@ const SwiperShow = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="d-flex justify-content-center py-5 swiper-box iphone">
-            <div className="swiper-img me-5" ref={containerIphone} />
-            <div className="swiper-text mt-6">
+            <div className="swiper-img " ref={containerIphone} />
+            <div className="swiper-text ">
               <h2 data-swiper-parallax="-400">Iphone 12 Pacific</h2>
               <p data-swiper-parallax="-400">
                 At first glance, the iPhone 12 Pro looks like a phone that's
